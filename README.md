@@ -1,2 +1,3 @@
 # lets-learn
-This is my first github ripo
+This is my first github repo
+author:- arnav
