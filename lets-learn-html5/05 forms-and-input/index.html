@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about HTML5 forms and input types.">
+    <title>Forms and Input tags</title>
+</head>
+
+<body>
+    <h1>Enter you fucking username</h1>
+    <form action="post">
+        <div>
+
+            <label for="username">Enter you username</label>
+            <!-- autofocus will make sure this textbox will be in focus when page loads meaning if you starting without clicking on any other box then default typing will start here  -->
+
+            <!-- if required attribute  is added then this field is mandatory to filled to submit the form -->
+            <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus>
+        </div>
+        <div>
+            <!-- if the name is same in two radio type inputs then only one of them can be selected at a time  -->
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+
+        <div>
+            <label for="subscribe">subscribe to our newsletter</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+        </div>
+        <div>
+            <label for="comment">enter your comment here</label> <br>
+            <!-- here placeholder holds the words that will be in the text box like enter your name or here comment... -->
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="comment...."></textarea>
+        </div>
+        <div>
+            <label for="company">select your fav phone company</label>
+            <select name="company" id="company">
+                <option value="none">none</option>
+                <option value="apple">apple</option>
+                <option value="samsung">samsung</option>
+                <option value="motorola">motorola</option>
+
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <img src="image.png" alt="image of pattern attribute" width="500">
+            <input type="text" pattern="[0-9]{10}">
+        </div>
+    </form>
+</body>
+
+</html>
