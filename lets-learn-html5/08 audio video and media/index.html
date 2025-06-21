@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio video and media</title>
+</head>
+
+<body>
+  <video src="video.mp4" height="550" controls ></video>
+  <div>the attribute preload for audio and video The "preload" attribute can have the following values:</div>
+    <div>1. none: This is the default value. It indicates that the browser should not preload the audio file at all. The
+    audio file will only start downloading when the user initiates playback.</div>
+    <div>2. metadata: This value tells the browser to preload only the metadata of the audio file, such as its duration and
+    basic information about the audio. This can be useful if you want to display the audio duration to the user without
+    fully loading the audio data.</div>
+    <div>3. auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the
+    loading of other important page content. The browser will try to load the audio file in the background so that it's
+    ready to play when the user decides to start it. </div>
+  <audio src="sachin.mp3" controls muted></audio>
+
+  <div>
+    <svg>
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red">
+    </svg>
+  </div>
+
+  <div>
+    <iframe src="https://www.youtube.com/" frameborder="0" width="300" height="500"></iframe>
+  </div>
+</body>
+
+</html>
