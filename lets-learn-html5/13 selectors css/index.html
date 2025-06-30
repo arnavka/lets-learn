@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS selsctors</title>
+    <style>
+        /* element selector */
+
+        div {
+            /* background-color: red;*/
+        }
+
+        /* class selector  */
+
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* decendent selector  */
+
+        div p {
+            color: rgb(0, 34, 255);
+            background-color: rgb(65, 50, 78);
+        }
+
+
+        /* child selector  */
+        div>p {
+            color: aqua;
+            background-color: blueviolet;
+        }
+
+        /* universal selector  */
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        /* pseudo selector  */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            color: red;
+        }
+        
+        a:hover{
+            background-color: rgb(44, 100, 148);
+        }
+
+        p:first-child{
+            background-color: rgb(147, 147, 147);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="one">
+            <p>i am first </p>
+            <p>i am second </p>
+    </main>
+    <div class="red">
+        I am a div
+    </div>
+    <div id="green">
+        i am also div
+
+        <p>i am p child of div</p>
+    </div>
+
+
+    <div>
+        <article>
+            <p> i am p tag under a div but not direct child of div </p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">go to google</a>
+
+
+</body>
+
+</html>
